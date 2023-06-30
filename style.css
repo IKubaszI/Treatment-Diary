@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Alatsi&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  overflow: auto;
+}
+
+body {
+  background: #DDEEFC;
+  color: #1A3B5D;
+  font-family: 'Alatsi', sans-serif;
+  font-size: 16px;
+  padding: 2.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header {
+  font-size: 1.4rem;
+  text-align: center;
+  background: #ffff;
+  padding: .5rem;
+  box-shadow: 4px 4px 1px rgba(0, 0, 0, 0.25);
+  border-radius: .8rem;
+  width: 100%;
+  max-width: 425px;
+}
+
+main {
+  background: #ffff;
+  margin: 2.6rem 0 2.6rem 0;
+  padding: 1rem;
+  box-shadow: 3px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: .8rem;
+  width: 100%;
+  max-width: 800px;
+}
+
+button {
+  background-color: transparent;
+  border: .15rem solid #1A3B5D;
+  border-radius: 1rem;
+  padding: .1rem;
+  margin: .2rem 0;
+  font-family: 'Alatsi', sans-serif;
+  color: #1A3B5D;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+
+button:hover {
+  background-color: #1A3B5D;
+  color: #ffff;
+  transform: scale(1.05);
+}
+
+input[type="text"], input[type="time"], input[type="number"] {
+  border: .15rem solid #1A3B5D;
+  border-radius: .5rem;
+  padding: .2rem;
+}
+
+input[type="image"] {
+  transition: all .2s ease-in-out;
+}
+
+input[type="image"]:hover {
+  transform: scale(1.2);
+}
+
+label {
+  margin-bottom: .3rem;
+}
+
+input {
+  margin-bottom: .5rem;
+}
+
+.line {
+  background: #1A3B5D;
+  width: 100%;
+  height: .15rem;
+  border-radius: 1rem;
+  margin: .5rem 0;
+}
+
+#title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+#control-buttons input {
+  display: inline-block;
+  height: 1.4rem;
+  filter: invert(16%) sepia(17%) saturate(5144%) hue-rotate(187deg) brightness(89%) contrast(83%);
+  cursor: pointer;
+  align-self: normal;
+  transform: translateY(+.4rem);
+  margin-left: .6rem;
+}
+
+#form-templates {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#template-label {
+  font-size: 1rem;
+  margin-bottom: .3rem;
+}
+
+#template-text, #template-text-options {
+  border: .15rem solid #1A3B5D;
+  border-radius: .5rem;
+  padding: .1rem;
+}
+
+#template-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#template-remove, #template-add {
+  flex-basis: 45%;
+}
+
+#form-add-item {
+  display: flex;
+  flex-direction: column;
+}
+
+#form-add-item #time, #form-add-item #text {
+  margin-bottom: .5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#form-add-item #input-submit {
+  width: 20%;
+  align-self: center;
+}
+
+#items-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.3rem;
+  margin-bottom: .5rem;
+}
+
+#items-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-height: 10rem;
+  padding: .5rem;
+  border: .15rem solid #1A3B5D;
+  border-radius: .5rem;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 0rem;
+  line-height: 1.4rem;
+}
+
+.item .item-time {
+  flex-basis: 20%;
+  flex-wrap: wrap;
+}
+
+.item .item-text {
+  flex-basis: 55%;
+}
+
+.item .item-buttons {
+  flex-basis: 15%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  transform: translateY(-.15rem);
+}
+
+.item .item-buttons input {
+  height: 1.4rem;
+  margin-top: .25rem;
+  filter: invert(16%) sepia(17%) saturate(5144%) hue-rotate(187deg) brightness(89%) contrast(83%);
+}
+
+#summary-container h3 {
+  font-size: 1.3rem;
+  margin-bottom: .5rem;
+}
+
+#form-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer input {
+  width: 6.5rem;
+  transition: none !important;
+  transform: none !important;
+  border-radius: 1rem;
+}

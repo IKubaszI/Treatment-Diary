@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <title>Dzienniczek</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <h2>Dzienniczek leczenia</h2>
+    </header>
+    <main>
+        <section id="title-container">
+            <h3>Dodaj wpis</h3>
+            <section id="control-buttons">
+                <input type="image" src="images/paper-plane-regular.svg" alt="Wyślij" id="send-button">
+                <input type="image" src="images/clipboard-regular.svg" alt="Kopiuj" id="copy-button">
+                <input type="image" src="images/trash-can-regular.svg" alt="Usuń" id="clear-button">
+                <input type="image" src="images/gear-solid.svg" alt="Ustawienia" id="settings-button">
+            </section>
+        </section>
+        <section id="settings-container" style="display: none;">
+            <form id="form-templates" autocomplete="off">
+                <label for="template-text" id="template-label">Szablony</label>
+                <input type="text" name="template-text" id="template-text" list="template-text-options">
+                <datalist id="template-text-options">
+
+                </datalist>
+                <section id="template-buttons">
+                    <button type="submit" id="template-add" name="template-add">Dodaj</button>
+                    <button type="button" id="template-remove" name="template-remove">Usuń</button>
+                </section>
+            </form>
+        </section>
+        <div class="line"></div>
+        <form id="form-add-item" autocomplete="off" TabIndex="-1">
+            <section id="time">
+                <label for="input-time" class="input-label">Czas</label>
+                <input type="time" id="input-time" name="input-time" TabIndex="-1">
+            </section>
+            <section id="text">
+                <label for="input-text" class="input-label">Czynność</label>
+                <input type="text" id="input-text" name="input-text" list="template-text-options">
+                <datalist id="template-text-options">
+
+                </datalist>
+            </section>
+            <button type="submit" id="input-submit" name="input-submit" class="input-submit">Dodaj</button>
+        </form>
+        <div class="line"></div>
+
+        <section id="items-container">
+            <h3>Wpisy</h3>
+            <section>
+
+            </section>
+        </section>
+        <section id="items-list">
+
+        </section>
+        <div class="line"></div>
+        <section id="summary-container">
+            <h3>Informacje dodatkowe</h3>
+            <form id="form-summary" autocomplete="off">
+                <label for="liquids" id="summary-label">Płyny</label>
+                <input type="text" name="liquids" id="summary-liquids">
+                <label for="screen" name="screen">Ilość godzin przed ekranem</label>
+                <input type="number" name="screen" id="summary-screen" step="1">
+                <label for="aches" name="aches">Bóle</label>
+                <input type="text" name="aches" id="summary-aches">
+                <label for="excersises">Ćwiczenia</label>
+                <input type="text" name="excersises" id="summary-exercises">
+                <label for="summary-text">Podsumowanie</label>
+                <input type="text" name="summary-text" id="summary-text">
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
